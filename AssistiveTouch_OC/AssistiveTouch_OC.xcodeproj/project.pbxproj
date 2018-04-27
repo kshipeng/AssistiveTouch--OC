@@ -139,8 +139,8 @@
 		3D6B7F992092DFAD004B21C0 /* SPAssistiveTouch */ = {
 			isa = PBXGroup;
 			children = (
-				3D6B7F9A2092DFAD004B21C0 /* SPAssistiveTouch.m */,
 				3D6B7F9B2092DFAD004B21C0 /* SPAssistiveTouch.h */,
+				3D6B7F9A2092DFAD004B21C0 /* SPAssistiveTouch.m */,
 			);
 			path = SPAssistiveTouch;
 			sourceTree = "<group>";
