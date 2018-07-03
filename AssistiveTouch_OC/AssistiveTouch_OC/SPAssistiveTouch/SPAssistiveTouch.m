@@ -150,6 +150,16 @@
     }
 }
 
+- (void)setAllowMove:(BOOL)allowMove {
+    _allowMove = allowMove;
+    for (UIGestureRecognizer *gesture in self.gestureRecognizers) {
+        if ([gesture isKindOfClass:UIPanGestureRecognizer.class]) {
+            gesture.enabled = _allowMove;
+        }
+    }
+    
+}
+
 - (void)resetFrameX:(CGFloat)x y:(CGFloat)y w:(CGFloat)width h:(CGFloat)height {
     if (x <= minX())     x = minX();
     if (x >= maxX(self)) x = maxX(self);

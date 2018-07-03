@@ -10,6 +10,9 @@
 
 @interface SPAssistiveTouch : UIView
 
+/** 是否允许拖拽，默认YES */
+@property (nonatomic, assign) BOOL allowMove;
+
 /** 页面是否有导航栏，默认YES */
 @property (nonatomic, assign) BOOL hasNavigationBar;
 /** 页面是否有TabBar，默认YES */
