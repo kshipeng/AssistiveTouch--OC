@@ -108,6 +108,10 @@
     }
 }
 
+- (void)click:(void (^)(SPAssistiveTouch *))clickBlock {
+    _clickBlock = clickBlock;
+}
+
 - (void)setBackColor:(UIColor *)backColor {
     _backColor = backColor;
     self.backgroundColor = backColor;

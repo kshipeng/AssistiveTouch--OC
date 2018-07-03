@@ -35,5 +35,6 @@
 
 + (instancetype)showOnView:(UIView *)view x:(CGFloat)x y:(CGFloat)y width:(CGFloat)width;
 + (instancetype)showOnView:(UIView *)view x:(CGFloat)x y:(CGFloat)y width:(CGFloat)width click:(void(^)(SPAssistiveTouch *assistive))block;
+- (void)click:(void(^)(SPAssistiveTouch *assistive))clickBlock;
 
 @end
